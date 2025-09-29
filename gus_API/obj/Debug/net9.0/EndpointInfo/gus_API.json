@@ -110,7 +110,7 @@
         }
       }
     },
-    "/api/Profile/addDetails": {
+    "/api/Profile/upsertDetails": {
       "put": {
         "tags": [
           "Profile"
@@ -140,10 +140,177 @@
           }
         }
       }
+    },
+    "/api/Profile/addAdress": {
+      "post": {
+        "tags": [
+          "Profile"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdressCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdressCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdressCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Profile/changeAdress/{addressId}": {
+      "put": {
+        "tags": [
+          "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "addressId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdressUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdressUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdressUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Profile/getAdress/{adressId}": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "adressId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "AdressCreateDto": {
+        "required": [
+          "city",
+          "house",
+          "street"
+        ],
+        "type": "object",
+        "properties": {
+          "city": {
+            "maxLength": 100,
+            "minLength": 2,
+            "pattern": "^[A-Za-zА-Яа-яЁё\\s\\-]+$",
+            "type": "string"
+          },
+          "street": {
+            "maxLength": 150,
+            "minLength": 2,
+            "type": "string"
+          },
+          "house": {
+            "maxLength": 10,
+            "minLength": 0,
+            "pattern": "^[0-9A-Za-z\\-]+$",
+            "type": "string"
+          },
+          "apartment": {
+            "pattern": "^[0-9]+$",
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdressUpdateDto": {
+        "required": [
+          "city",
+          "house",
+          "id",
+          "street"
+        ],
+        "type": "object",
+        "properties": {
+          "city": {
+            "maxLength": 100,
+            "minLength": 2,
+            "pattern": "^[A-Za-zА-Яа-яЁё\\s\\-]+$",
+            "type": "string"
+          },
+          "street": {
+            "maxLength": 150,
+            "minLength": 2,
+            "type": "string"
+          },
+          "house": {
+            "maxLength": 10,
+            "minLength": 0,
+            "pattern": "^[0-9A-Za-z\\-]+$",
+            "type": "string"
+          },
+          "apartment": {
+            "pattern": "^[0-9]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginDto": {
         "type": "object",
         "properties": {
@@ -207,6 +374,17 @@
             "minLength": 1,
             "pattern": "^[\\p{L} \\-']*$",
             "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "adress": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AdressUpdateDto"
+            },
             "nullable": true
           }
         },

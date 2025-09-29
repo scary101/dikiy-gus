@@ -59,8 +59,61 @@
   },
   {
     "ContainingType": "gus_API.Controllers.ProfileController",
+    "Method": "AddAdress",
+    "RelativePath": "api/Profile/addAdress",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "gus_API.Models.DTOs.AdressCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.ProfileController",
+    "Method": "ChangeAdress",
+    "RelativePath": "api/Profile/changeAdress/{addressId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "gus_API.Models.DTOs.AdressUpdateDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "addressId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.ProfileController",
+    "Method": "GetAdress",
+    "RelativePath": "api/Profile/getAdress/{adressId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adressId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.ProfileController",
     "Method": "AddDetails",
-    "RelativePath": "api/Profile/addDetails",
+    "RelativePath": "api/Profile/upsertDetails",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

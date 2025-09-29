@@ -17,5 +17,9 @@ namespace gus_API.Models.DTOs
         [StringLength(50, MinimumLength = 1, ErrorMessage = "Отчество должно быть от 1 до 50 символов")]
         [RegularExpression(@"^[\p{L} \-']*$", ErrorMessage = "Отчество может содержать только буквы")]
         public string? MiddleName { get; set; }
+
+        public string? Email {  get; set; }
+
+        public List<AdressUpdateDto>? Adress { get; set; }
     }
 }
