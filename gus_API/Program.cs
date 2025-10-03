@@ -61,11 +61,17 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+builder.Services.AddHttpContextAccessor();
+
 // DI
-builder.Services.AddScoped<JwtService>();
+builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<BlockService>();
 builder.Services.AddScoped<EmailService>();
 builder.Services.AddScoped<PasswordHasher>();
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<ProfileService>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<SellerService>();
 
 var app = builder.Build();
 

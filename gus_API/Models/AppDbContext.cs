@@ -59,11 +59,12 @@ public partial class AppDbContext : DbContext
 
     public virtual DbSet<Wallet> Wallets { get; set; }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=gus_db;Username=postgres;Password=1234");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.HasPostgresExtension("uuid-ossp");
-
         modelBuilder.Entity<Accrual>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("accruals_pkey");
@@ -203,13 +204,19 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.AccountNumber)
                 .HasColumnType("character varying")
                 .HasColumnName("account_number");
+            entity.Property(e => e.Bik).HasMaxLength(9);
             entity.Property(e => e.CreatedAt)
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("created_at");
-            entity.Property(e => e.IsActive).HasColumnName("is_active");
-            entity.Property(e => e.Name)
-                .HasColumnType("character varying")
-                .HasColumnName("name");
+            entity.Property(e => e.FullName).HasMaxLength(200);
+            entity.Property(e => e.Inn).HasMaxLength(12);
+            entity.Property(e => e.IsActive)
+                .HasDefaultValue(false)
+                .HasColumnName("is_active");
+            entity.Property(e => e.LegalAddress).HasMaxLength(300);
+            entity.Property(e => e.MagazinName).HasMaxLength(100);
+            entity.Property(e => e.Ogrnip).HasMaxLength(15);
+            entity.Property(e => e.ShortName).HasMaxLength(100);
             entity.Property(e => e.UpdatedAt)
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("updated_at");
@@ -317,6 +324,9 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.Token)
                 .HasColumnType("character varying")
                 .HasColumnName("token");
+            entity.Property(e => e.Used)
+                .HasDefaultValue(false)
+                .HasColumnName("used");
             entity.Property(e => e.UserId).HasColumnName("user_id");
 
             entity.HasOne(d => d.User).WithMany(p => p.PasswordResets)
@@ -523,6 +533,9 @@ public partial class AppDbContext : DbContext
                 .HasColumnType("character varying")
                 .HasColumnName("first_name");
             entity.Property(e => e.IsActive).HasColumnName("is_active");
+            entity.Property(e => e.Isep)
+                .HasDefaultValue(false)
+                .HasColumnName("isep");
             entity.Property(e => e.LastName)
                 .HasColumnType("character varying")
                 .HasColumnName("last_name");

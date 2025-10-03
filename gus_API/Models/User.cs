@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace gus_API.Models;
 
@@ -29,7 +28,9 @@ public partial class User
     public int? Attempt { get; set; }
 
     public string? Salt { get; set; }
-    [JsonIgnore]
+
+    public bool Isep { get; set; }
+
     public virtual ICollection<Address> Addresses { get; set; } = new List<Address>();
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();

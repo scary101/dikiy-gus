@@ -33,6 +33,38 @@
   },
   {
     "ContainingType": "gus_API.Controllers.AuthController",
+    "Method": "ResetLink",
+    "RelativePath": "api/auth/resetlink",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "gus_API.Models.DTOs.EmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/auth/resetpassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "gus_API.Models.DTOs.ResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.AuthController",
     "Method": "VerifyCode",
     "RelativePath": "api/auth/verifycode",
     "HttpMethod": "POST",
@@ -121,6 +153,48 @@
       {
         "Name": "model",
         "Type": "gus_API.Models.DTOs.UserDetailsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.SellerController",
+    "Method": "GetMyEp",
+    "RelativePath": "api/Seller/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.SellerController",
+    "Method": "RegisterEp",
+    "RelativePath": "api/Seller/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "gus_API.Models.DTOs.EntrepreneurDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.SellerController",
+    "Method": "ToggleEp",
+    "RelativePath": "api/Seller/toggle/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

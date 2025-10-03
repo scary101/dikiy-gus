@@ -2,16 +2,17 @@
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace gus_API.Service
 {
-    public class JwtService
+    public class TokenService
     {
         private string _secretkey;
         private readonly int _tokenExpirationMinutes;
 
-        public JwtService(IConfiguration configuration)
+        public TokenService(IConfiguration configuration)
         {
             _secretkey = configuration["JwtSettings:SecretKey"]
                     ?? throw new ArgumentNullException("SecretKey not found in configuration");
@@ -36,35 +37,23 @@ namespace gus_API.Service
                 Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.Now.AddMinutes(_tokenExpirationMinutes),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
-                Audience = "Client",    
-                Issuer = "Server"       
+                Audience = "Client",
+                Issuer = "Server"
             };
 
             var token = tokenHandler.CreateToken(tokenDescription);
             return tokenHandler.WriteToken(token);
         }
 
-        public string GeneratePasswordResetToken(User user)
+        public string GeneratePasswordResetToken()
         {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes(_secretkey);
 
-
-            var claims = new[]
+            var tokenBytes = new byte[32];
+            using (var rng = RandomNumberGenerator.Create())
             {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim("ResetPassword", "true")
-            };
-
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddMinutes(15),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+                rng.GetBytes(tokenBytes);
+            }
+            return Convert.ToBase64String(tokenBytes);
         }
     }
 }

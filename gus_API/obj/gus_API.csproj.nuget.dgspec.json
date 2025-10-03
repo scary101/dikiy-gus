@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meloc\\Desktop\\dikiy-gus-user-auth\\gus_API\\gus_API.csproj": {}
+    "C:\\Users\\meloc\\Desktop\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meloc\\Desktop\\dikiy-gus-user-auth\\gus_API\\gus_API.csproj": {
+    "C:\\Users\\meloc\\Desktop\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meloc\\Desktop\\dikiy-gus-user-auth\\gus_API\\gus_API.csproj",
+        "projectUniqueName": "C:\\Users\\meloc\\Desktop\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
         "projectName": "gus_API",
-        "projectPath": "C:\\Users\\meloc\\Desktop\\dikiy-gus-user-auth\\gus_API\\gus_API.csproj",
+        "projectPath": "C:\\Users\\meloc\\Desktop\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
         "packagesPath": "C:\\Users\\meloc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meloc\\Desktop\\dikiy-gus-user-auth\\gus_API\\obj\\",
+        "outputPath": "C:\\Users\\meloc\\Desktop\\dikiy-gus-UserProfile\\gus_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

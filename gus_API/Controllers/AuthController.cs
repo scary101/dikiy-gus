@@ -4,6 +4,8 @@ using gus_API.Models.Enums;
 using gus_API.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Security.Claims;
 
 namespace gus_API.Controllers
 {
@@ -11,108 +13,102 @@ namespace gus_API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly AppDbContext _context;
-        private readonly EmailService _emailService;
-        private readonly JwtService _jwtService;
+        private readonly AuthService _authService;
 
-
-        public AuthController(AppDbContext context, EmailService emailService, JwtService jwtService)
+        public AuthController(AuthService authService)
         {
-            _context = context;
-            _emailService = emailService;
-            _jwtService = jwtService;
+            _authService = authService;
         }
-
 
         [HttpPost("register")]
         public async Task<IActionResult> RegisterUser([FromBody] RegisterDto model)
         {
-            if (model.Password != model.Confirm)
+            try
             {
-                return BadRequest("Пароли не совпадают!");
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                await _authService.RegisterUserAsync(model);
+                return Ok();
             }
-            if (_context.Users.FirstOrDefault(i => i.Email == model.Email) != null)
+            catch (Exception ex)
             {
-                return BadRequest("Пользователь с таким логином уже существует!");
+                return BadRequest(ex.Message);
             }
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var user = new User
-            {
-                Email = model.Email,
-                Password = PasswordHasher.HashPassword(model.Password, out string salt),
-                RoleId = (int)RoleEnum.Client,
-                CreatedAt = DateTime.Now,
-                Salt = salt
-            };
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
-            return Ok();
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> LoginUser([FromBody] LoginDto model)
         {
-            var user = await _context.Users
-                .Include(u => u.Role)
-                .FirstOrDefaultAsync(u => u.Email == model.Email);
-
-            if (user == null)
+            try
             {
-                return BadRequest("Пользователь не найден");
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                await _authService.SendLoginCodeAsync(model);
+                return Ok();
             }
-            if (!PasswordHasher.VerifyPassword(model.Password, user.Password, user.Salt))
+            catch (Exception ex)
             {
-                if (user.Attempt > 5)
-                {
-                    BlockService.BanUserHightAttempt(user);
-                    await _context.SaveChangesAsync();
-                    return BadRequest("Превышен лимит попыток! Вы были заблокированы, попробуйте позже");
-                }
-                else
-                {
-                    user.Attempt++;
-                    await _context.SaveChangesAsync();
-                    return BadRequest("Неверный логин или пароль!");
-                }
-
+                return BadRequest(ex.Message);
             }
-            var code = _emailService.GenerateLoginCode(user);
-
-            await _emailService.SendEmailAsync(user.Email, "Код подтверждения", code);
-            return Ok();
-
         }
 
         [HttpPost("verifycode")]
-        public IActionResult VerifyCode([FromBody] VerifyCodeDto model)
+        public async Task<IActionResult> VerifyCode([FromBody] VerifyCodeDto model)
         {
-            var code = _context.ConfirmationCodes
-             .Include(c => c.User)
-                 .ThenInclude(u => u.Role)
-             .FirstOrDefault(i => i.User.Email == model.Email && i.Code == model.Code);
-
-            if (code == null)
+            try
             {
-                return BadRequest("Неверный код!");
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                var token = await _authService.VerifyCodeAsync(model);
+                return Ok(new { token });
             }
-            if(code.ExpiresAt <=  DateTime.Now)
+            catch (Exception ex)
             {
-                return BadRequest("Код подтверждения истек!");
+                return BadRequest(ex.Message);
             }
+        }
 
-            var user = code.User;
+        [HttpPost("resetlink")]
+        public async Task<IActionResult> ResetLink([FromBody] EmailDto model)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                await _authService.SendResetLinkAsync(model.Email);
+                return Ok("Если пользователь существует, ссылка была отправлена");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
-            var token = _jwtService.GenerateToken(user);
-
-            _context.ConfirmationCodes.Remove(code);
-            _context.SaveChanges();
-
-            return Ok(new {token});
+        [HttpPost("resetpassword")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto model)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+                await _authService.ResetPasswordAsync(model);
+                return Ok("Пароль успешно изменен. Эту страницу можно закрыть");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
+
 }

@@ -9,17 +9,29 @@ public partial class Entrepreneur
 
     public int UserId { get; set; }
 
-    public string? Name { get; set; }
-
     public string? AccountNumber { get; set; }
 
     public int? WalletId { get; set; }
 
-    public bool? IsActive { get; set; }
+    public bool IsActive { get; set; }
 
     public DateTime? CreatedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }
+
+    public string Inn { get; set; } = null!;
+
+    public string ShortName { get; set; } = null!;
+
+    public string Bik { get; set; } = null!;
+
+    public string FullName { get; set; } = null!;
+
+    public string Ogrnip { get; set; } = null!;
+
+    public string LegalAddress { get; set; } = null!;
+
+    public string MagazinName { get; set; } = null!;
 
     public virtual ICollection<Payout> Payouts { get; set; } = new List<Payout>();
 
