@@ -23,6 +23,8 @@ public partial class AppDbContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<CategoryCharacteristic> CategoryCharacteristics { get; set; }
+
     public virtual DbSet<Characteristic> Characteristics { get; set; }
 
     public virtual DbSet<ConfirmationCode> ConfirmationCodes { get; set; }
@@ -144,7 +146,6 @@ public partial class AppDbContext : DbContext
             entity.ToTable("categories");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Level).HasColumnName("level");
             entity.Property(e => e.Name)
                 .HasColumnType("character varying")
                 .HasColumnName("name");
@@ -153,6 +154,27 @@ public partial class AppDbContext : DbContext
             entity.HasOne(d => d.Parent).WithMany(p => p.InverseParent)
                 .HasForeignKey(d => d.ParentId)
                 .HasConstraintName("categories_parent_id_fkey");
+        });
+
+        modelBuilder.Entity<CategoryCharacteristic>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("category_characteristic_pkey");
+
+            entity.ToTable("category_characteristic");
+
+            entity.HasIndex(e => new { e.Categoryid, e.Characteristicid }, "category_characteristic_categoryid_characteristicid_key").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Categoryid).HasColumnName("categoryid");
+            entity.Property(e => e.Characteristicid).HasColumnName("characteristicid");
+
+            entity.HasOne(d => d.Category).WithMany(p => p.CategoryCharacteristics)
+                .HasForeignKey(d => d.Categoryid)
+                .HasConstraintName("category_characteristic_categoryid_fkey");
+
+            entity.HasOne(d => d.Characteristic).WithMany(p => p.CategoryCharacteristics)
+                .HasForeignKey(d => d.Characteristicid)
+                .HasConstraintName("category_characteristic_characteristicid_fkey");
         });
 
         modelBuilder.Entity<Characteristic>(entity =>
@@ -374,6 +396,9 @@ public partial class AppDbContext : DbContext
             entity.Property(e => e.Name)
                 .HasColumnType("character varying")
                 .HasColumnName("name");
+            entity.Property(e => e.PhotoPath)
+                .HasMaxLength(255)
+                .HasColumnName("photo_path");
             entity.Property(e => e.Price).HasColumnName("price");
             entity.Property(e => e.Rating).HasColumnName("rating");
             entity.Property(e => e.ReviewsCount).HasColumnName("reviews_count");

@@ -558,4 +558,6 @@ C:\Users\meloc\Desktop\dikiy-gus-UserProfile\gus_API\obj\Debug\net9.0\staticweba
 C:\Users\meloc\Desktop\dikiy-gus-UserProfile\gus_API\obj\Debug\net9.0\gus_API.csproj.Up2Date
 C:\Users\meloc\Desktop\dikiy-gus-UserProfile\gus_API\obj\Debug\net9.0\gus_API.genruntimeconfig.cache
 C:\Users\meloc\Desktop\dikiy-gus-UserProfile\gus_API\obj\Debug\net9.0\ref\gus_API.dll
+C:\Users\meloc\Desktop\dikiy-gus-UserProfile\gus_API\obj\Debug\net9.0\gus_API.sourcelink.json
+C:\Users\meloc\Desktop\dikiy-gus-UserProfile\gus_API\bin\Debug\net9.0\gus_API.staticwebassets.runtime.json
 C:\Users\meloc\Desktop\dikiy-gus-UserProfile\gus_API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
