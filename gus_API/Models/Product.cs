@@ -29,8 +29,6 @@ public partial class Product
 
     public DateTime? UpdatedAt { get; set; }
 
-    public string? PhotoPath { get; set; }
-
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
     public virtual Category? Category { get; set; }

@@ -7,7 +7,7 @@ namespace gus_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize] // доступ только авторизованным пользователям
     public class SellerController : ControllerBase
     {
         private readonly SellerService _sellerService;

@@ -72,9 +72,6 @@ builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<ProfileService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<SellerService>();
-builder.Services.AddScoped<CategoryService>();
-builder.Services.AddScoped<CharacteristicService>();
-builder.Services.AddScoped<ProductService>();
 
 var app = builder.Build();
 
