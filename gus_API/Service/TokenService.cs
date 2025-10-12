@@ -17,7 +17,7 @@ namespace gus_API.Service
             _secretkey = configuration["JwtSettings:SecretKey"]
                     ?? throw new ArgumentNullException("SecretKey not found in configuration");
 
-            _tokenExpirationMinutes = int.Parse(configuration["JwtSettings:AccessTokenExpirationMinutes"] ?? "60");
+            _tokenExpirationMinutes = int.Parse(configuration["JwtSettings:AccessTokenExpirationMinutes"] ?? "360");
         }
 
         public string GenerateToken(User user)

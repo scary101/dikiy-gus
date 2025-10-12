@@ -22,6 +22,19 @@ namespace gus_API.Service
                 throw new UnauthorizedAccessException("Invalid token");
             return userId;
         }
+        public async Task<Entrepreneur> GetCurrentEntrepreneurAsync()
+        {
+            int userId = GetCurrentUserId();
+
+            var entrepreneur = await _context.Entrepreneurs
+                .Include(e => e.User)
+                .FirstOrDefaultAsync(e => e.UserId == userId);
+
+            if (entrepreneur == null)
+                throw new InvalidOperationException("Предприниматель не найден");
+
+            return entrepreneur;
+        }
 
         public Task<User> GetCurrentUserAsync() =>
             _context.Users.FirstOrDefaultAsync(u => u.Id == GetCurrentUserId());
