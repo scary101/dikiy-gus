@@ -9,11 +9,19 @@ public partial class Supply
 
     public int EntrepreneurId { get; set; }
 
-    public string? Status { get; set; }
-
     public DateTime? CreatedAt { get; set; }
 
+    public int? ManagerId { get; set; }
+
+    public int StatusId { get; set; }
+
+    public DateTime? CompletedAt { get; set; }
+
     public virtual Entrepreneur Entrepreneur { get; set; } = null!;
+
+    public virtual User? Manager { get; set; }
+
+    public virtual SupplyStatus Status { get; set; } = null!;
 
     public virtual ICollection<SupplyItem> SupplyItems { get; set; } = new List<SupplyItem>();
 }

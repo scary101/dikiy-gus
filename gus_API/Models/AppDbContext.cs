@@ -53,6 +53,8 @@ public partial class AppDbContext : DbContext
 
     public virtual DbSet<SupplyItem> SupplyItems { get; set; }
 
+    public virtual DbSet<SupplyStatus> SupplyStatuses { get; set; }
+
     public virtual DbSet<Telegram> Telegrams { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
@@ -486,18 +488,32 @@ public partial class AppDbContext : DbContext
             entity.ToTable("supplies");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CompletedAt)
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("completed_at");
             entity.Property(e => e.CreatedAt)
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("created_at");
             entity.Property(e => e.EntrepreneurId).HasColumnName("entrepreneur_id");
-            entity.Property(e => e.Status)
-                .HasColumnType("character varying")
-                .HasColumnName("status");
+            entity.Property(e => e.ManagerId).HasColumnName("manager_id");
+            entity.Property(e => e.StatusId)
+                .HasDefaultValue(1)
+                .HasColumnName("status_id");
 
             entity.HasOne(d => d.Entrepreneur).WithMany(p => p.Supplies)
                 .HasForeignKey(d => d.EntrepreneurId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("supplies_entrepreneur_id_fkey");
+
+            entity.HasOne(d => d.Manager).WithMany(p => p.Supplies)
+                .HasForeignKey(d => d.ManagerId)
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("fk_supplies_user");
+
+            entity.HasOne(d => d.Status).WithMany(p => p.Supplies)
+                .HasForeignKey(d => d.StatusId)
+                .OnDelete(DeleteBehavior.Restrict)
+                .HasConstraintName("fk_supplies_status");
         });
 
         modelBuilder.Entity<SupplyItem>(entity =>
@@ -520,6 +536,18 @@ public partial class AppDbContext : DbContext
                 .HasForeignKey(d => d.SupplyId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("supply_items_supply_id_fkey");
+        });
+
+        modelBuilder.Entity<SupplyStatus>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("supply_status_pkey");
+
+            entity.ToTable("supply_status");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Name)
+                .HasMaxLength(100)
+                .HasColumnName("name");
         });
 
         modelBuilder.Entity<Telegram>(entity =>

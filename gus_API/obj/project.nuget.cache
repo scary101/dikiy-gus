@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2h9iTf2fAGo=",
+  "dgSpecHash": "fqbx959VEao=",
   "success": true,
-  "projectFilePath": "C:\\Users\\meloc\\Desktop\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
+  "projectFilePath": "C:\\Users\\meloc\\Desktop\\гуси\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\meloc\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
     "C:\\Users\\meloc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\meloc\\.nuget\\packages\\itextsharp\\5.5.13.4\\itextsharp.5.5.13.4.nupkg.sha512",
     "C:\\Users\\meloc\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.9\\microsoft.aspnetcore.authentication.jwtbearer.9.0.9.nupkg.sha512",
     "C:\\Users\\meloc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\meloc\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
@@ -61,5 +63,18 @@
     "C:\\Users\\meloc\\.nuget\\packages\\system.text.json\\9.0.9\\system.text.json.9.0.9.nupkg.sha512",
     "C:\\Users\\meloc\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Пакет \"iTextSharp 5.5.13.4\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net9.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "projectPath": "C:\\Users\\meloc\\Desktop\\гуси\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\meloc\\Desktop\\гуси\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
+      "libraryId": "iTextSharp",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

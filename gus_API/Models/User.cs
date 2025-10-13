@@ -49,6 +49,8 @@ public partial class User
 
     public virtual Role? Role { get; set; }
 
+    public virtual ICollection<Supply> Supplies { get; set; } = new List<Supply>();
+
     public virtual ICollection<Telegram> Telegrams { get; set; } = new List<Telegram>();
 
     public virtual ICollection<UserBan> UserBans { get; set; } = new List<UserBan>();

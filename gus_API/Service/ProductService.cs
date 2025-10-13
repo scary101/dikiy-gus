@@ -1,5 +1,6 @@
 ﻿using gus_API.Models;
 using gus_API.Models.DTOs.ProductDTOs;
+using gus_API.Models.DTOs.SupplyDTOs;
 using Microsoft.EntityFrameworkCore;
 
 namespace gus_API.Service
