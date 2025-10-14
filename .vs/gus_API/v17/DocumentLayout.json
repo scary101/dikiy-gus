@@ -1,90 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\dikiy-gus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\service\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\gus_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\gus_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\models\\dtos\\accountdtos\\inforegemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\dtos\\accountdtos\\inforegemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\controllers\\supplycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\controllers\\supplycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\controllers\\sellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\controllers\\sellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\service\\supplyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\supplyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\dtos\\supplydtos\\supplyinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\dtos\\supplydtos\\supplyinvoicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\dtos\\supplydtos\\supplystatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\dtos\\supplydtos\\supplystatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\entrepreneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\entrepreneur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\models\\dtos\\accountdtos\\adminregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\dtos\\accountdtos\\adminregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\supply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\supply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\supplyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\supplyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\supplystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\supplystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\dtos\\supplydtos\\supplylistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\dtos\\supplydtos\\supplylistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\service\\blockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\blockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\service\\sellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\user\\source\\repos\\dikiy-gus\\gus_api\\service\\sellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\service\\sellerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|c:\\users\\meloc\\desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-userprofile\\gus_api\\models\\dtos\\supplydtos\\createsupplydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D534CC9-7A19-4986-B19A-CC08DEE1EB4F}|gus_API\\gus_API.csproj|solutionrelative:gus_api\\models\\dtos\\supplydtos\\createsupplydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,286 +50,195 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 13,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SupplyService.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\SupplyService.cs",
-              "RelativeDocumentMoniker": "gus_API\\Service\\SupplyService.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\SupplyService.cs",
-              "RelativeToolTip": "gus_API\\Service\\SupplyService.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAUwKQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T20:38:54.296Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\ProductService.cs",
-              "RelativeDocumentMoniker": "gus_API\\Service\\ProductService.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\ProductService.cs",
-              "RelativeToolTip": "gus_API\\Service\\ProductService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAowMYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "gus_API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Models\\User.cs",
+              "RelativeToolTip": "gus_API\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:57:04.158Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-10-14T11:01:52.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "gus_API",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
-              "RelativeDocumentMoniker": "gus_API\\gus_API.csproj",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
-              "RelativeToolTip": "gus_API\\gus_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-13T22:05:18.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PdfService.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\PdfService.cs",
-              "RelativeDocumentMoniker": "gus_API\\Service\\PdfService.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\PdfService.cs",
-              "RelativeToolTip": "gus_API\\Service\\PdfService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwE0AAAB0AAAAAAAAAA==",
+              "Title": "InfoRegEmailDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Models\\DTOs\\AccountDTOs\\InfoRegEmailDto.cs",
+              "RelativeDocumentMoniker": "gus_API\\Models\\DTOs\\AccountDTOs\\InfoRegEmailDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Models\\DTOs\\AccountDTOs\\InfoRegEmailDto.cs",
+              "RelativeToolTip": "gus_API\\Models\\DTOs\\AccountDTOs\\InfoRegEmailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T21:09:55.787Z",
+              "WhenOpened": "2025-10-14T09:55:07.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SupplyInvoiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyInvoiceDto.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyInvoiceDto.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyInvoiceDto.cs",
-              "RelativeToolTip": "gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyInvoiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\EmailService.cs",
+              "RelativeDocumentMoniker": "gus_API\\Service\\EmailService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\EmailService.cs",
+              "RelativeToolTip": "gus_API\\Service\\EmailService.cs",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAAAFABAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T20:51:41.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\User.cs",
-              "RelativeToolTip": "gus_API\\Models\\User.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAQwDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T20:50:51.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Entrepreneur.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\Entrepreneur.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\Entrepreneur.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\Entrepreneur.cs",
-              "RelativeToolTip": "gus_API\\Models\\Entrepreneur.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T20:50:41.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Favorite.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\Favorite.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\Favorite.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\Favorite.cs",
-              "RelativeToolTip": "gus_API\\Models\\Favorite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T20:50:40.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "gus_API\\Models\\AppDbContext.cs",
-              "ViewState": "AgIAAE4BAAAAAAAAAAAqwGkBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:24:34.711Z",
+              "WhenOpened": "2025-10-14T09:53:29.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "SupplyStatusDto.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyStatusDto.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyStatusDto.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyStatusDto.cs",
-              "RelativeToolTip": "gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyStatusDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Title": "AdminRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Models\\DTOs\\AccountDTOs\\AdminRegisterDto.cs",
+              "RelativeDocumentMoniker": "gus_API\\Models\\DTOs\\AccountDTOs\\AdminRegisterDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Models\\DTOs\\AccountDTOs\\AdminRegisterDto.cs",
+              "RelativeToolTip": "gus_API\\Models\\DTOs\\AccountDTOs\\AdminRegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T21:06:49.267Z",
+              "WhenOpened": "2025-10-14T09:53:01.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SupplyController.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Controllers\\SupplyController.cs",
-              "RelativeDocumentMoniker": "gus_API\\Controllers\\SupplyController.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Controllers\\SupplyController.cs",
-              "RelativeToolTip": "gus_API\\Controllers\\SupplyController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwG0AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "gus_API\\Service\\AuthService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\AuthService.cs",
+              "RelativeToolTip": "gus_API\\Service\\AuthService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowFgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:01:42.129Z",
+              "WhenOpened": "2025-10-14T09:51:29.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Program.cs",
-              "RelativeDocumentMoniker": "gus_API\\Program.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Program.cs",
-              "RelativeToolTip": "gus_API\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAEYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:06:03.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\Product.cs",
-              "RelativeToolTip": "gus_API\\Models\\Product.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T20:50:36.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SupplyStatus.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\SupplyStatus.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\SupplyStatus.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\SupplyStatus.cs",
-              "RelativeToolTip": "gus_API\\Models\\SupplyStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T20:50:27.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Supply.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\Supply.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\Supply.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\Supply.cs",
-              "RelativeToolTip": "gus_API\\Models\\Supply.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T20:42:08.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SupplyListDto.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyListDto.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyListDto.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyListDto.cs",
-              "RelativeToolTip": "gus_API\\Models\\DTOs\\SupplyDTOs\\SupplyListDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:57:42.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SupplyItem.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\SupplyItem.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\SupplyItem.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\SupplyItem.cs",
-              "RelativeToolTip": "gus_API\\Models\\SupplyItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T20:42:08.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CreateSupplyDto.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\DTOs\\SupplyDTOs\\CreateSupplyDto.cs",
-              "RelativeDocumentMoniker": "gus_API\\Models\\DTOs\\SupplyDTOs\\CreateSupplyDto.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Models\\DTOs\\SupplyDTOs\\CreateSupplyDto.cs",
-              "RelativeToolTip": "gus_API\\Models\\DTOs\\SupplyDTOs\\CreateSupplyDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T20:41:53.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\UserService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "gus_API\\Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\UserService.cs",
               "RelativeToolTip": "gus_API\\Service\\UserService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwCYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T09:24:40.867Z",
+              "WhenOpened": "2025-10-14T09:46:17.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "gus_API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "gus_API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T09:36:33.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\AccountService.cs",
+              "RelativeDocumentMoniker": "gus_API\\Service\\AccountService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\AccountService.cs",
+              "RelativeToolTip": "gus_API\\Service\\AccountService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T09:30:14.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SellerController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Controllers\\SellerController.cs",
+              "RelativeDocumentMoniker": "gus_API\\Controllers\\SellerController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Controllers\\SellerController.cs",
+              "RelativeToolTip": "gus_API\\Controllers\\SellerController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T09:30:17.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "SellerService.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\SellerService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\SellerService.cs",
               "RelativeDocumentMoniker": "gus_API\\Service\\SellerService.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\SellerService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\Service\\SellerService.cs",
               "RelativeToolTip": "gus_API\\Service\\SellerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAqwGYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T12:02:47.924Z",
+              "WhenOpened": "2025-10-14T09:30:11.022Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 198,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "BlockService.cs",
-              "DocumentMoniker": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\BlockService.cs",
-              "RelativeDocumentMoniker": "gus_API\\Service\\BlockService.cs",
-              "ToolTip": "C:\\Users\\meloc\\Desktop\\\u0433\u0443\u0441\u0438\\dikiy-gus-UserProfile\\gus_API\\Service\\BlockService.cs",
-              "RelativeToolTip": "gus_API\\Service\\BlockService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T12:03:11.559Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         }

@@ -3623,23 +3623,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\meloc\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meloc\\Desktop\\гуси\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\gus_API.csproj",
       "projectName": "gus_API",
-      "projectPath": "C:\\Users\\meloc\\Desktop\\гуси\\dikiy-gus-UserProfile\\gus_API\\gus_API.csproj",
-      "packagesPath": "C:\\Users\\meloc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meloc\\Desktop\\гуси\\dikiy-gus-UserProfile\\gus_API\\obj\\",
+      "projectPath": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\gus_API.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\dikiy-gus\\gus_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\meloc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -1,5 +1,8 @@
 ﻿using gus_API.Models;
 using gus_API.Models.DTOs;
+using gus_API.Models.DTOs.AccountDTOs;
+using gus_API.Models.DTOs.AdminDTOs;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 
 namespace gus_API.Service
@@ -58,15 +61,21 @@ namespace gus_API.Service
             {
                 ep.IsActive = true;
                 user.Isep = true;
-                await _context.SaveChangesAsync();
             }
             else
             {
-                ep.IsActive = false;
-                user.Isep = false;
-                await _context.SaveChangesAsync();
+                if (_context.Entrepreneurs.Any(i => i.UserId == user.Id))
+                {
+                    ep.IsActive = false;
+                    user.Isep = false;
+                }
+                else
+                {
+                    throw new InvalidOperationException("Пользователь не имеет коммерческого аккаунта");
+                } 
             }
-            _emailService.SendEmailEpEntry(_context.Users.FirstOrDefault(i => i.Id == ep.UserId).Email, ep.IsActive);
+            await _emailService.SendEmailEpEntry(_context.Users.FirstOrDefault(i => i.Id == ep.UserId).Email, ep.IsActive);
+            await _context.SaveChangesAsync();
         }
         public async Task<EntrepreneurDto> GetInfoEp()
         {
@@ -90,6 +99,41 @@ namespace gus_API.Service
                 MagazinName = ep.MagazinName
             };
             return epDto;
+        }
+        public async Task<List<AdminEpDto>> GetAll()
+        {
+            var ep = _context.Entrepreneurs.ToList();
+            return ep.Select(i => new AdminEpDto
+            {
+                Id = i.Id,
+                AccountNumber = i.AccountNumber,
+                UserId = i.UserId,
+                IsActive = i.IsActive,
+                LegalAddress = i.LegalAddress,
+                CreatedAt = i.CreatedAt,
+            }).ToList();
+        }
+        public async Task<EpDetailDto> GetInfoById(int id)
+        {
+            var ep = _context.Entrepreneurs.FirstOrDefault(i => i.Id == id);
+
+            var epdetail = new EpDetailDto
+            {
+                Id = ep.Id,
+                UserId = ep.UserId,
+                AccountNumber = ep.AccountNumber,
+                WalletId = ep.WalletId,
+                IsActive = ep.IsActive,
+                CreatedAt = ep.CreatedAt,
+                Inn = ep.Inn,
+                ShortName = ep.ShortName,
+                Bik = ep.Bik,
+                FullName = ep.FullName,
+                Ogrnip = ep.Ogrnip,
+                LegalAddress = ep.LegalAddress,
+                MagazinName = ep.MagazinName
+            };
+            return epdetail;
         }
     }
 }

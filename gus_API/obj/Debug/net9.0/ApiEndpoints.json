@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "gus_API.Controllers.AccountController",
+    "Method": "BanUser",
+    "RelativePath": "api/Account/ban/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.AccountController",
+    "Method": "CreateNew",
+    "RelativePath": "api/Account/createnew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "gus_API.Models.DTOs.AdminDTOs.AdminRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.AccountController",
+    "Method": "GetAll",
+    "RelativePath": "api/Account/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "gus_API.Controllers.AuthController",
     "Method": "LoginUser",
     "RelativePath": "api/auth/login",
@@ -417,6 +459,32 @@
       {
         "Name": "model",
         "Type": "gus_API.Models.DTOs.UserDetailsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.SellerController",
+    "Method": "GetAll",
+    "RelativePath": "api/Seller/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.SellerController",
+    "Method": "GetById",
+    "RelativePath": "api/Seller/getById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

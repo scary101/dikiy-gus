@@ -31,9 +31,11 @@ namespace gus_API.Service
                 Email = model.Email,
                 Password = PasswordHasher.HashPassword(model.Password, out string salt),
                 RoleId = (int)RoleEnum.Client,
+                IsActive = true,
                 Salt = salt,
                 CreatedAt = DateTime.UtcNow
             };
+
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
@@ -59,7 +61,7 @@ namespace gus_API.Service
             }
 
             var code = _emailService.GenerateLoginCode(user);
-            await _emailService.SendEmailAsync(user.Email, "Код подтверждения", code);
+            await _emailService.SendConfirmCode(user.Email, code);
         }
 
         public async Task<string> VerifyCodeAsync(VerifyCodeDto model)

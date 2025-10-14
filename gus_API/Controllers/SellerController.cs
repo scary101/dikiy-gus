@@ -66,5 +66,32 @@ namespace gus_API.Controllers
                 return BadRequest(new { error = ex.Message });
             }
         }
+        [HttpGet("getall")]
+        public async Task<IActionResult> GetAll()
+        {
+            try
+            {
+                var eps = await _sellerService.GetAll();
+                return Ok(eps);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+        [HttpGet("getById/{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            try
+            {
+                var ep = await _sellerService.GetInfoById(id);
+                return Ok(ep);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+
+        }
     }
 }

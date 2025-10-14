@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gus_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a0368c84e9b5d8c669fcd57b9e8dbad5125934b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+612ba5fd76a271d2e3ace4b40a75ce6352c68ebb")]
 [assembly: System.Reflection.AssemblyProductAttribute("gus_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gus_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

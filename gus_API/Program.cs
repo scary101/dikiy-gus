@@ -77,6 +77,7 @@ builder.Services.AddScoped<CharacteristicService>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<SupplyService>();
 builder.Services.AddScoped<PdfService>();
+builder.Services.AddScoped<AccountService>();
 
 var app = builder.Build();
 
