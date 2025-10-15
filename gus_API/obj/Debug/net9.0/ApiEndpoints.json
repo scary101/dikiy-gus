@@ -122,6 +122,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "gus_API.Controllers.CatalogController",
+    "Method": "GetAll",
+    "RelativePath": "api/Catalog/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.CatalogController",
+    "Method": "GetByCategory",
+    "RelativePath": "api/Catalog/category/{categoryId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.CatalogController",
+    "Method": "GetByEntrepreneur",
+    "RelativePath": "api/Catalog/ep/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "gus_API.Controllers.CategoriesController",
     "Method": "AddCategory",
     "RelativePath": "api/Categories/add",

@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using gus_API.Models.DTOs.ProductDTOs.ProductCardDTOs;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 
 namespace gus_API.Models;
 
