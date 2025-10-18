@@ -8,15 +8,29 @@ namespace gus_API.Service
     public class CatalogService
     {
         private readonly AppDbContext _context;
-        public CatalogService(AppDbContext context)
+        private readonly UserService _userService;
+        public CatalogService(AppDbContext context, UserService userService)
         {
             _context = context;
+            _userService = userService;
         }
-
-        public async Task<List<ProductCardDto>> GetCards(List<Product> product)
+        private async Task<List<ProductCardDto>> GetCards(List<Product> products)
         {
+            var user = await _userService.GetCurrentUserAsync();
+
+            List<int> favoriteProductIds = new();
+
+            if (user != null)
+            {
+                favoriteProductIds = await _context.Favorites
+                    .Where(f => f.UserId == user.Id)
+                    .Select(f => f.ProductId)
+                    .ToListAsync();
+            }
+
             var cards = new List<ProductCardDto>();
-            foreach (var card in product)
+
+            foreach (var card in products)
             {
                 cards.Add(new ProductCardDto
                 {
@@ -26,49 +40,119 @@ namespace gus_API.Service
                     Stock = card.Stock,
                     Rating = card.Rating,
                     ReviewsCount = card.ReviewsCount,
+                    PhotoPath = card.PhotoPath,
+                    IsFavorite = user != null && favoriteProductIds.Contains(card.Id)
                 });
             }
+
             return cards;
         }
 
-        public async Task<List<ProductCardDto>> GetAllCards()
+
+
+        private IQueryable<Product> ApplyFilterAndSort(
+            IQueryable<Product> query,
+            string? filter = null,
+            string sortBy = "id")
         {
-            var product = _context.Products.Where(i => i.IsActive == true && i.Stock > 0).ToList();
-            
-            if(product == null)
+            if (!string.IsNullOrEmpty(filter))
+                query = query.Where(p => EF.Functions.Like(p.Name, $"%{filter}%"));
+
+            query = sortBy.ToLower() switch
             {
-                throw new InvalidOperationException("Товары не найдены");
-            }
-            var cards = await GetCards(product);
-            return cards;
+                "price_asc" => query.OrderBy(p => p.Price),
+                "price_desc" => query.OrderByDescending(p => p.Price),
+                "rating_asc" => query.OrderBy(p => p.Rating),
+                "rating_desc" => query.OrderByDescending(p => p.Rating),
+                _ => query.OrderBy(p => p.Id)
+            };
+
+            return query;
         }
-        public async Task<List<ProductCardDto>> GetByCategory(int categoryId)
+
+        public async Task<List<ProductCardDto>> GetMainPageCards(int count = 12)
+        {
+            var products = await _context.Products
+                .Where(p => p.IsActive == true && p.Stock > 0)
+                .OrderBy(p => Guid.NewGuid())
+                .Take(count)
+                .ToListAsync();
+
+            if (!products.Any())
+                throw new InvalidOperationException("Товары не найдены");
+
+            return await GetCards(products);
+        }
+
+        public async Task<List<ProductCardDto>> GetByCategory(
+            int categoryId,
+            int page = 1,
+            int pageSize = 20,
+            string? filter = null,
+            string sortBy = "id")
         {
             var categoryIds = await _context.Categories
                 .Where(c => c.Id == categoryId || c.ParentId == categoryId)
                 .Select(c => c.Id)
                 .ToListAsync();
 
-            var products = await _context.Products
-                .Where(p => p.IsActive == true && p.Stock > 0 && p.CategoryId.HasValue && categoryIds.Contains(p.CategoryId.Value))
+            var query = _context.Products
+                .Where(p => p.IsActive == true && p.Stock > 0 && p.CategoryId.HasValue && categoryIds.Contains(p.CategoryId.Value));
+
+            query = ApplyFilterAndSort(query, filter, sortBy);
+
+            var products = await query
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
                 .ToListAsync();
 
             if (!products.Any())
                 throw new InvalidOperationException("Товары не найдены");
 
-            var cards = await GetCards(products);
-            return cards;
+            return await GetCards(products);
         }
-        public async Task<List<ProductCardDto>> GetByEp(int id)
-        {
-            var product = _context.Products.Where(i => i.IsActive == true && i.Stock > 0 && i.EntrepreneurId == id).ToList();
-            if (product == null)
-            {
-                throw new InvalidOperationException("Товары не найдены");
-            }
-            var cards = await GetCards(product);
-            return cards;
 
+        public async Task<List<ProductCardDto>> GetByQuery(
+            string query,
+            int page = 1,
+            int pageSize = 20,
+            string sortBy = "id")
+        {
+            var q = _context.Products
+                .Where(p => p.IsActive == true && EF.Functions.Like(p.Name, $"%{query}%"));
+
+            q = ApplyFilterAndSort(q, null, sortBy);
+
+            var products = await q
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            if (!products.Any())
+                throw new InvalidOperationException("Ничего не найдено");
+
+            return await GetCards(products);
+        }
+
+        public async Task<ProductCardEpDto> GetByEp(int id)
+        {
+            var product = await _context.Products
+                .Where(p => p.IsActive == true && p.Stock > 0 && p.EntrepreneurId == id)
+                .ToListAsync();
+
+            var ep = await _context.Entrepreneurs.FirstOrDefaultAsync(i => i.Id == id);
+
+            if (product == null || ep == null)
+                throw new InvalidOperationException("Товары не найдены");
+
+            var cards = await GetCards(product);
+
+            return new ProductCardEpDto
+            {
+                products = cards,
+                MagazineName = ep.MagazinName,
+                EpName = ep.ShortName
+            };
         }
         public async Task<ProductDetailDto> GetProductDetailsAsync(int productId)
         {
@@ -127,7 +211,5 @@ namespace gus_API.Service
                 }).ToList()
             };
         }
-
-
     }
 }

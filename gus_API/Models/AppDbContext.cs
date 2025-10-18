@@ -1,7 +1,6 @@
-﻿using gus_API.Models.DTOs.ProductDTOs.ProductCardDTOs;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace gus_API.Models;
 
@@ -265,6 +264,7 @@ public partial class AppDbContext : DbContext
             entity.ToTable("favorites");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Count).HasColumnName("count");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
             entity.Property(e => e.UserId).HasColumnName("user_id");
 

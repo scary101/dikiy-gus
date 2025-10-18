@@ -15,6 +15,7 @@
         public int? ReviewsCount { get; set; }
 
         public string? PhotoPath { get; set; }
+        public bool IsFavorite { get; set; }
 
     }
 }

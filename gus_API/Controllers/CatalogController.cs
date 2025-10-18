@@ -14,60 +14,47 @@ namespace gus_API.Controllers
         {
             _catalogService = catalogService;
         }
-
-        [HttpGet("all")]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("main")]
+        public async Task<IActionResult> GetMainPageCards([FromQuery] int count = 12)
         {
-            try
-            {
-                var cards = await _catalogService.GetAllCards();
-                return Ok(cards);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return NotFound(new { message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Произошла ошибка на сервере", detail = ex.Message });
-            }
+            var products = await _catalogService.GetMainPageCards(count);
+            return Ok(products);
         }
-
         [HttpGet("category/{categoryId}")]
-        public async Task<IActionResult> GetByCategory(int categoryId)
+        public async Task<IActionResult> GetByCategory(
+            int categoryId,
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 20,
+            [FromQuery] string? filter = null,
+            [FromQuery] string sortBy = "id")
         {
-            try
-            {
-                var cards = await _catalogService.GetByCategory(categoryId);
-                return Ok(cards);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return NotFound(new { message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Произошла ошибка на сервере", detail = ex.Message });
-            }
+            var products = await _catalogService.GetByCategory(categoryId, page, pageSize, filter, sortBy);
+            return Ok(products);
         }
 
-        [HttpGet("ep/{id}")]
-        public async Task<IActionResult> GetByEntrepreneur(int id)
+        [HttpGet("search")]
+        public async Task<IActionResult> GetByQuery(
+            [FromQuery] string query,
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 20,
+            [FromQuery] string sortBy = "id")
         {
-            try
-            {
-                var cards = await _catalogService.GetByEp(id);
-                return Ok(cards);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return NotFound(new { message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Произошла ошибка на сервере", detail = ex.Message });
-            }
+            var products = await _catalogService.GetByQuery(query, page, pageSize, sortBy);
+            return Ok(products);
         }
 
+        [HttpGet("entrepreneur/{epId}")]
+        public async Task<IActionResult> GetByEp(int epId)
+        {
+            var products = await _catalogService.GetByEp(epId);
+            return Ok(products);
+        }
+
+        [HttpGet("{productId}")]
+        public async Task<IActionResult> GetProductDetails(int productId)
+        {
+            var product = await _catalogService.GetProductDetailsAsync(productId);
+            return Ok(product);
+        }
     }
 }

@@ -1129,7 +1129,6 @@ C:\Users\meloc\source\repos\dikiy-gus\gus_API\obj\Debug\net9.0\staticwebassets.b
 C:\Users\meloc\source\repos\dikiy-gus\gus_API\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\meloc\source\repos\dikiy-gus\gus_API\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\meloc\source\repos\dikiy-gus\gus_API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\meloc\source\repos\dikiy-gus\gus_API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\meloc\source\repos\dikiy-gus\gus_API\obj\Debug\net9.0\gus_API.csproj.Up2Date
 C:\Users\meloc\source\repos\dikiy-gus\gus_API\obj\Debug\net9.0\gus_API.dll
 C:\Users\meloc\source\repos\dikiy-gus\gus_API\obj\Debug\net9.0\refint\gus_API.dll

@@ -123,12 +123,18 @@
   },
   {
     "ContainingType": "gus_API.Controllers.CatalogController",
-    "Method": "GetAll",
-    "RelativePath": "api/Catalog/all",
+    "Method": "GetProductDetails",
+    "RelativePath": "api/Catalog/{productId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -143,22 +149,89 @@
         "Name": "categoryId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "filter",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "gus_API.Controllers.CatalogController",
-    "Method": "GetByEntrepreneur",
-    "RelativePath": "api/Catalog/ep/{id}",
+    "Method": "GetByEp",
+    "RelativePath": "api/Catalog/entrepreneur/{epId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "epId",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.CatalogController",
+    "Method": "GetMainPageCards",
+    "RelativePath": "api/Catalog/main",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gus_API.Controllers.CatalogController",
+    "Method": "GetByQuery",
+    "RelativePath": "api/Catalog/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
